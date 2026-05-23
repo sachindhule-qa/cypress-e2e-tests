@@ -1,0 +1,23 @@
+{
+  "name": "cypress-e2e-tests",
+  "version": "1.0.0",
+  "description": "End-to-End Testing Framework using Cypress - by Sachin Dhule",
+  "author": "Sachin Dhule",
+  "license": "MIT",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:run:chrome": "cypress run --browser chrome",
+    "cy:run:firefox": "cypress run --browser firefox",
+    "cy:run:headed": "cypress run --headed",
+    "cy:run:auth": "cypress run --spec 'cypress/e2e/auth/**'",
+    "cy:run:products": "cypress run --spec 'cypress/e2e/products/**'",
+    "cy:run:cart": "cypress run --spec 'cypress/e2e/cart/**'"
+  },
+  "devDependencies": {
+    "cypress": "^13.7.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0"
+  }
+}
